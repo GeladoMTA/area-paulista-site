@@ -1,0 +1,21 @@
+AREA PAULISTA ROLEPLAY — SITE DE AVISO
+
+Arquivos:
+- index.html: página principal
+- assets/logo-ap-rp.png: logo utilizada no site
+
+PUBLICAR GRATUITAMENTE COM GITHUB PAGES
+1. Crie uma conta em https://github.com/ (se ainda não tiver).
+2. Crie um repositório público. Sugestão de nome: area-paulista-site
+3. Envie os arquivos mantendo a estrutura:
+   index.html
+   assets/logo-ap-rp.png
+4. No repositório, abra Settings > Pages.
+5. Em Build and deployment, escolha Deploy from a branch.
+6. Selecione a branch main e a pasta /(root), depois clique em Save.
+7. Aguarde a publicação. O GitHub mostrará o endereço do site na própria tela do Pages.
+
+O endereço gratuito normalmente fica no formato:
+https://SEU-USUARIO.github.io/area-paulista-site/
+
+Para atualizar o texto ou a imagem, edite/substitua os arquivos no repositório.
