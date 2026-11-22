@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06110a">
+  <meta name="description" content="Area Paulista Roleplay — servidor em desenvolvimento. Em breve, novidades sobre a cidade.">
+  <title>Area Paulista Roleplay | Em desenvolvimento</title>
+  <style>
+    :root { color-scheme: dark; --green:#13f34a; --muted:#aab5ad; }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; min-height:100vh; display:grid; place-items:center; overflow:hidden;
+      font-family:Arial, Helvetica, sans-serif; color:#fff;
+      background:
+        radial-gradient(ellipse at 50% 42%, rgba(0,255,65,.18), transparent 38%),
+        radial-gradient(ellipse at 8% 95%, rgba(0,180,65,.14), transparent 35%),
+        linear-gradient(135deg,#030705 0%,#0b1710 52%,#020503 100%);
+    }
+    body:before, body:after {
+      content:""; position:fixed; inset:-20%; pointer-events:none;
+      background: repeating-linear-gradient(120deg, transparent 0 110px, rgba(38,255,92,.025) 111px 113px, transparent 114px 220px);
+      transform:rotate(-8deg);
+    }
+    body:after {
+      inset:auto; width:520px; height:520px; border:1px solid rgba(19,243,74,.12);
+      border-radius:50%; right:-230px; top:-250px; box-shadow:0 0 90px rgba(19,243,74,.08), inset 0 0 80px rgba(19,243,74,.04);
+    }
+    main { position:relative; z-index:1; width:min(92vw,760px); text-align:center; padding:54px 24px 46px; }
+    .logo-wrap { width:min(62vw,300px); margin:0 auto 26px; position:relative; }
+    .logo-wrap:before { content:""; position:absolute; inset:18%; border-radius:50%; background:rgba(0,255,55,.22); filter:blur(48px); z-index:-1; }
+    .logo { display:block; width:100%; height:auto; filter:drop-shadow(0 12px 30px rgba(0,0,0,.55)); }
+    .eyebrow { color:var(--green); font-size:12px; font-weight:800; letter-spacing:.34em; text-transform:uppercase; margin:0 0 14px; }
+    h1 { margin:0; font-size:clamp(27px,5.5vw,48px); line-height:1.08; letter-spacing:.045em; font-weight:900; text-transform:uppercase; }
+    h1 span { color:var(--green); text-shadow:0 0 24px rgba(19,243,74,.25); }
+    .rule { width:76px; height:3px; margin:25px auto; background:var(--green); box-shadow:0 0 18px rgba(19,243,74,.7); }
+    .message { max-width:570px; margin:0 auto; color:#d5ddd7; font-size:clamp(15px,2.3vw,18px); line-height:1.75; }
+    .message strong { color:#fff; }
+    .status { display:inline-flex; align-items:center; gap:10px; margin-top:30px; padding:10px 16px; border:1px solid rgba(19,243,74,.3); border-radius:999px; color:#c9fbd4; background:rgba(5,30,13,.55); font-size:11px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+    .dot { width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 12px var(--green); animation:pulse 1.7s infinite; }
+    footer { margin-top:52px; color:#748078; font-size:10px; letter-spacing:.19em; text-transform:uppercase; }
+    @keyframes pulse { 0%,100%{opacity:1; transform:scale(1)} 50%{opacity:.45; transform:scale(.72)} }
+    @media(max-width:480px) { main{padding:35px 18px} .logo-wrap{width:min(68vw,250px)} footer{margin-top:38px} }
+    @media(prefers-reduced-motion:reduce) { .dot{animation:none} }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo-wrap">
+      <img class="logo" src="assets/logo-ap-rp.png" alt="Logo Area Paulista Roleplay">
+    </div>
+    <p class="eyebrow">Area Paulista Roleplay</p>
+    <h1>A cidade está <span>em desenvolvimento</span></h1>
+    <div class="rule"></div>
+    <p class="message">
+      Estamos trabalhando para preparar uma experiência incrível para todos.
+      <strong>Em breve teremos novidades sobre a cidade.</strong>
+      Fique ligado — o próximo capítulo do Area Paulista está chegando!
+    </p>
+    <div class="status"><span class="dot"></span> Novidades em breve</div>
+    <footer>© Area Paulista Roleplay · Todos os direitos reservados</footer>
+  </main>
+</body>
+</html>
